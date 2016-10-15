@@ -6,7 +6,38 @@
         xmlns:local="clr-namespace:FlashCards"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="OpenCmdExecuted" CanExecute="OpenCmdCanExecute" />
+    </Window.CommandBindings>
+
+    <DockPanel>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" DockPanel.Dock="Top">
+            <Menu x:Name="menu" VerticalAlignment="Top" Width="517">
+                <MenuItem Header="File">
+                    <MenuItem x:Name="fileOpenMenu" HorizontalAlignment="Left" Width="140" 
+                              Command="ApplicationCommands.Open"/>
+                    <MenuItem x:Name="filExitMenu" Header="Exit" HorizontalAlignment="Left" Width="140"/>
+                </MenuItem>
+            </Menu>
+            <ToolBar x:Name="toolBar">
+                <Button x:Name="btnPrev" Content="Previous" Height="22" VerticalAlignment="Top" Width="75" Click="btnPrev_Click" IsEnabled="False"/>
+                <Button x:Name="btnNext" Content="Next" Height="22" VerticalAlignment="Top" Width="75" Click="btnNext_Click" IsEnabled="False"/>
+
+            </ToolBar>
+        </StackPanel>
+
+        <StackPanel DockPanel.Dock="Top">
+            <Label x:Name="lblQuestion" Content="Question"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Width="517" VerticalAlignment="Bottom">
+            <Expander x:Name="expAnswer" Header="Answer" IsExpanded="False">
+                <Label x:Name="lblAnswer" Content="Answer" Width="517"/>
+            </Expander>
+            <StatusBar>
+                <Label x:Name="label" Content="Ready"/>
+            </StatusBar>
+
+        </StackPanel>
+
+    </DockPanel>
 </Window>

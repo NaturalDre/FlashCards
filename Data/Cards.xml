@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlashCards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FlashCard>
+		<Question>How many layers are in the OSI model?</Question>
+		<Answer>Seven</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What is at the beginning of a frame?</Question>
+		<Answer>Preamble</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>Which layer of the TCP/IP model controls the assembly and disassembly of data?</Question>
+		<Answer>The Transport layer</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>How many pairs of wires are in a CAT5e cable?</Question>
+		<Answer>Four</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What are the four components of fiber cable?</Question>
+		<Answer>Core
+Cladding
+Buffer
+Jacket</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What ports does DHCP use?</Question>
+		<Answer>UDP 67(server)/68(client)</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>Linux commands to release and renew DHCP lease?</Question>
+		<Answer>sudo ifconfig eth0 down
+sudo ifconfig eth0 up</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>Identify private public IP addresses.</Question>
+		<Answer>10.0.0.0-10.255.255.255 (1 Class A block)
+172.16.0.0-172.31.255.255 (16 Class B blocks)
+192.168.0.0-192.168.255.255(256 Class C blocks)
+
+All others are public</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What does NTP/SNTP stand for?</Question>
+		<Answer>(Simple) Network Time Protocol</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port(s) does NTP/SNTP use?</Question>
+		<Answer>123</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What is TFTP and what port does it use?</Question>
+		<Answer>Trivial File Transfer Protocol (69)</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What is the range for the Registered Ports?</Question>
+		<Answer>1024-49151</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What is the range for the Dynamic/Private Ports?</Question>
+		<Answer>49152-65535</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What do the netstat command options -a, -n, -o, and -b do?</Question>
+		<Answer> -a shows all used ports. 
+-n shows raw port numbers and IP addresses
+-o shows Process IDs
+-b shows the name of the process</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port does Telnet use?</Question>
+		<Answer>23</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port does SSH use?</Question>
+		<Answer>22</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>SMTP is used for what?</Question>
+		<Answer>Send e-mail</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port does SMTP use?</Question>
+		<Answer>TCP 25</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What is POP3 used for?</Question>
+		<Answer>Receiving e-mail</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port does POP3 use?</Question>
+		<Answer>TCP 110</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What is IMAP4 used for?</Question>
+		<Answer>Receiving e-mail</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port does IMAP4 use?</Question>
+		<Answer>TCP 143</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port does HTTPS use?</Question>
+		<Answer>TCP 443</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port does FTP use?</Question>
+		<Answer>TCP (Data goes out on) 21 and (comes back on) 20.
+Active FTP uses 21 and 20. Passive uses 21.</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port does TFTP use?</Question>
+		<Answer>UDP 69</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port(s) does NetBIOS over TCP/IP use?</Question>
+		<Answer>TCP 137 and 139, UDP 137 and 138</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port(s) does SMB use without NetBIOS?</Question>
+		<Answer>TCP 445</Answer>
+	</FlashCard>
+	<FlashCard>
+		<Question>What port(s) does DNS use?</Question>
+		<Answer>UDP 53 and sometimes TCP 53</Answer>
+	</FlashCard>
+</FlashCards>
